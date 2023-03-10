@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Methods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<style>
+    ::placeholder{
+        text-align: center;
+    }
+    label{
+        color: #ffffff;
+    }
+  </style>
+<body>
+<div class="container-fluid">
+     <div class="row">
+          <div class="col-md-12">
+            <div class="date bg-danger text-light text-center border p-1">
+               <h1 class="h1 display-1 fw-bolder">Date Methods</h1>
+               <input type="text"  id="date" size="100"placeholder="Enter the Date Elements in Javascript Syntax">
+               <p class="bg-info text-light my-2 " id="p1"></p>
+               <button class="btn btn-warning my-4" onclick="tostring()">toString Method</button>
+               <button class="btn btn-warning my-4" onclick="datestrg()">todateString Method</button>
+               <button class="btn btn-warning my-4" onclick="toUTC()">toUTCString Method</button>
+               <button class="btn btn-warning my-4" onclick="toISO()">toISOString Method</button>
+               <button class="btn btn-warning my-4" onclick="toparse()">Parse Method</button>
+            </div>
+            <div class="getdate bg-danger text-light text-center border p-1">
+              <h1 class="h1 display-1 fw-bolder">Get Methods</h1>
+              <input type="text"  id="getdate" size="100" placeholder="Enter the Date Elements in Javascript Syntax">
+              <p class="bg-info text-light my-2" id="p2"></p>
+              <button class="btn btn-warning my-4" onclick="year()">Get full year</button>
+              <button class="btn btn-warning my-4" onclick="getmon()">Get Month</button>
+              <button class="btn btn-warning my-4" onclick="getdays()">Get Date</button>
+              <button class="btn btn-warning my-4" onclick="gethour()">Get Hour</button>
+              <button class="btn btn-warning my-4" onclick="getmin()">Get Minutes</button>
+              <button class="btn btn-warning my-4" onclick="getsec()">Get Seconds</button>
+              <button class="btn btn-warning my-4" onclick="getms()">Get Milliseconds</button>
+              <button class="btn btn-warning my-4" onclick="day()">Get Day</button>
+              <button class="btn btn-warning my-4" onclick="gettime()">Get Time</button> 
+              <p class="bg-info text-light my-2" id="p3"></p>
+              <button class="btn btn-warning my-4" onclick="datenow()">Date Now</button>
+              <button class="btn btn-warning my-4" onclick="timezone()">Time Zone Off</button>
+            </div>
+            <div class="setdate bg-danger text-light text-center border p-1">
+              <h1 class="h1 display-1 fw-bolder">Set Methods</h1>
+              <input type="text"  id="setdate" size="100" placeholder="Set the Elements Here">
+              <p class="bg-info text-light my-2" id="p4"></p>
+              <button class="btn btn-warning my-4" onclick="setyear()">Set full year</button>
+              <button class="btn btn-warning my-4" onclick="setmon()">Set Month</button>
+              <button class="btn btn-warning my-4" onclick="setdays()">Set Date</button>
+              <button class="btn btn-warning my-4" onclick="sethour()">Set Hour</button>
+              <button class="btn btn-warning my-4" onclick="setmin()">Set Minutes</button>
+              <button class="btn btn-warning my-4" onclick="setsec()">Set Seconds</button>
+              <button class="btn btn-warning my-4" onclick="settime()">Set Time</button>
+            </div>
+          </div>
+     </div>
+</div>    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js"></script>       
+</body>
+</html>
